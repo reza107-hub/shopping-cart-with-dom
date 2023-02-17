@@ -59,6 +59,6 @@ document.getElementById('last-card').addEventListener('click', function () {
         const productTotalPrice = parseInt(productPrice) * parseInt(productQuantity)
         grandTotal += productTotalPrice;
         tableContainer(serial, productName, productPrice, productQuantity, productTotalPrice, grandTotal)
+        document.getElementById('last-card').setAttribute('disabled', true)
     }
-    document.getElementById('last-card').setAttribute('disabled', true)
 })
